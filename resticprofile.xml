@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>resticprofile</Name>
+  <Repository>alexycodes/resticprofile:0.31.0</Repository>
+  <Registry>https://hub.docker.com/r/alexycodes/resticprofile</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/creativeprojects/resticprofile</Project>
+  <Overview>A configuration profiles manager for restic backup, resticprofile is the missing link between a configuration file and restic backup.&#xD;
+&#xD;
+This image overrides the official image's entrypoint and command to execute crond on start. Containers therefore run indefinitely and can be used to schedule tasks.</Overview>
+  <Category>Backup:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://creativeprojects.github.io/resticprofile/images/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1749108029</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Profiles" Target="/resticprofile" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/profiles</Config>
+  <Config Name="Data to backup" Target="/mnt/user" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="Crontab configuration" Target="/crontab" Default="" Mode="ro" Description="An optional file that can be used to set up scheduled tasks on start. Remove this path if you do not need it." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/crontab</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>

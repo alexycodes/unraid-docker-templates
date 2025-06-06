@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/190946-support-resticprofile</Support>
   <Project>https://github.com/creativeprojects/resticprofile</Project>
   <Overview>A configuration profiles manager for restic backup, resticprofile is the missing link between a configuration file and restic backup.&#xD;
 &#xD;

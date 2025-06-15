@@ -23,9 +23,11 @@ This image overrides the official image's entrypoint and command to execute cron
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Profiles" Target="/resticprofile" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/profiles</Config>
-  <Config Name="Data to backup" Target="/mnt/user" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
-  <Config Name="Crontab configuration" Target="/crontab" Default="" Mode="ro" Description="An optional file that can be used to set up scheduled tasks on start. Remove this path if you do not need it." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/crontab</Config>
+  <Config Name="Data to backup" Target="/mnt/user" Default="/mnt/user" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="Profiles" Target="/resticprofile" Default="/mnt/user/appdata/resticprofile/profiles" Mode="ro" Description="Configuration files for resticprofile." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/profiles</Config>
+  <Config Name="Pass files" Target="/pass" Default="/mnt/user/appdata/resticprofile/pass" Mode="ro" Description="Pass files for restic." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/pass</Config>
+  <Config Name="Crontab" Target="/crontab" Default="/mnt/user/appdata/resticprofile/crontab" Mode="ro" Description="An optional file that can be used to set up scheduled tasks on start." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/resticprofile/crontab</Config>
+  <Config Name="Cache" Target="/root/.cache" Default="" Mode="" Description="Where to persist restic's cache outside of the container." Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <TailscaleStateDir/>

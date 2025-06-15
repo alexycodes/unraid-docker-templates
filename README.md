@@ -1,3 +1,3 @@
-# unRAID Docker Templates
+# Unraid Docker Templates
 
-Docker templates that can be installed through unRAID's Community Applications.
+Docker templates that can be installed through Unraid's Community Applications.

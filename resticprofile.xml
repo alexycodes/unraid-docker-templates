@@ -11,7 +11,7 @@
   <Project>https://github.com/creativeprojects/resticprofile</Project>
   <Overview>A configuration profiles manager for restic backup, resticprofile is the missing link between a configuration file and restic backup.&#xD;
 &#xD;
-This image overrides the official image's entrypoint and command to execute crond on start. Containers therefore run indefinitely and can be used to schedule tasks.</Overview>
+This image is built for long-lived containers with database and backup utilities. It overrides the official image's entrypoint and command to execute crond on start, so containers run indefinitely and can be used to schedule tasks.</Overview>
   <Category>Backup:</Category>
   <WebUI/>
   <TemplateURL/>
